@@ -3,6 +3,8 @@ module com.example.homeflixproyect {
     requires javafx.fxml;
 
 
-    opens com.example.homeflixproyect to javafx.fxml;
-    exports com.example.homeflixproyect;
+    opens view to javafx.fxml;
+    exports view;
+    exports controller;
+    opens controller to javafx.fxml;
 }
