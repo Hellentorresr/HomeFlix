@@ -5,6 +5,8 @@ module com.example.homeflixproyect {
 
     opens view to javafx.fxml;
     exports view;
-    exports controller;
-    opens controller to javafx.fxml;
+    exports model;
+    opens model to javafx.fxml;
+    exports controller.controllerApp;
+    opens controller.controllerApp to javafx.fxml;
 }
